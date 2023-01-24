@@ -43,5 +43,17 @@ namespace ByteBankIO
 
             Saldo += valor;
         }
+        public override string ToString()
+        {
+
+            return $"\n === DADOS DA CONTA === \n" +
+                   $"Número da Conta : {this.Numero} \n" +
+                   $"Número da Agência : {this.Agencia} \n" +
+                   $"Saldo da Conta: R$ {this.Saldo} \n" +
+                   $"Titular da Conta: {this.Titular.Nome} \n" +
+                   $"CPF do Titular  : {this.Titular.CPF} \n\n" +
+                   $"==============================";
+
+        }
     }
 }
